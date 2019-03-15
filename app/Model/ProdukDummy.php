@@ -2,6 +2,7 @@
 
 namespace App\Model;
 
+use Kamva\Moloquent\Moloquent;
 use Jenssegers\Mongodb\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 

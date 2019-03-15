@@ -127,8 +127,8 @@ $router->delete('produk-dummy-ctrl/{id}', 'ProdukDummyCtrlsController@remove');
 /**
  * Routes for resource toko-dummy-ctrl
  */
-$router->get('toko-dummy-ctrl', 'TokoDummyCtrlsController@all');
-$router->get('toko-dummy-ctrl-toko', 'TokoDummyCtrlsController@allproduk');
+$router->get('createnewdummy', 'TokoDummyCtrlsController@createnew');
+$router->get('showdummy', 'TokoDummyCtrlsController@showdummy');
 $router->get('toko-dummy-ctrl/{id}', 'TokoDummyCtrlsController@get');
 $router->post('toko-dummy-ctrl', 'TokoDummyCtrlsController@add');
 $router->put('toko-dummy-ctrl/{id}', 'TokoDummyCtrlsController@put');

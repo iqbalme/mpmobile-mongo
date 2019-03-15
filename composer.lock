@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7207b0b6e226fe511e4694428b1d56e",
+    "content-hash": "5cec382991fa431d682fd5c2738ecc16",
     "packages": [
         {
             "name": "berkayk/onesignal-laravel",
@@ -2143,6 +2143,43 @@
                 "session"
             ],
             "time": "2018-01-08T10:44:00+00:00"
+        },
+        {
+            "name": "kamva/moloquent",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KamvaHQ/moloquent.git",
+                "reference": "cbd1534cf5baf002c2d03e374ab0193b3a0b5e50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KamvaHQ/moloquent/zipball/cbd1534cf5baf002c2d03e374ab0193b3a0b5e50",
+                "reference": "cbd1534cf5baf002c2d03e374ab0193b3a0b5e50",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.1",
+                "jenssegers/mongodb": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kamva\\Moloquent\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Behzad Shabani",
+                    "email": "behzad.shabani@gmail.com"
+                }
+            ],
+            "description": "An extended jenssegers/laravel-mongodb library",
+            "time": "2017-08-18T17:37:24+00:00"
         },
         {
             "name": "laravel/lumen-framework",

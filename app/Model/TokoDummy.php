@@ -2,6 +2,7 @@
 
 namespace App\Model;
 
+use Kamva\Moloquent\Moloquent;
 use Jenssegers\Mongodb\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -18,5 +19,9 @@ class TokoDummy extends Model
 
     public function produk(){
         return $this->hasMany('App\Model\ProdukDummy', 'tokodummy_id');
+    }
+
+    public function eproduk(){
+        return $this->embedsMany('App\Model\ProdukDummy', 'tokodummy_id');
     }
 }
