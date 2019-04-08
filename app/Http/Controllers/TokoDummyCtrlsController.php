@@ -14,15 +14,16 @@ class TokoDummyCtrlsController extends Controller {
         $toko->save();
         $produk = new ProdukDummy;
         $produk->nama_produk = 'STB ZTE B860H Eks Indihome';
-        $produk->tokodummy_id = new \MongoDB\BSON\ObjectId($toko->_id);
-        $produk->save();
+        // $produk->tokodummy_id = new \MongoDB\BSON\ObjectId($toko->_id);
+        // $produk->save();
+        $toko->produk()->save($produk);
         return $toko;
     }
 
     public function showdummy(){
         // return TokoDummy::with('produk')->get();
-        $toko = TokoDummy::all();
-        return $toko->produk();
+        $toko = TokoDummy::first();
+        return $toko->eproduk();
 
     }
 

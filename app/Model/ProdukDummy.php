@@ -19,6 +19,6 @@ class ProdukDummy extends Model
     ];
 
     public function toko(){
-        return $this->belongsTo('App\Model\TokoDummy');
+        return $this->IncludedIn('App\Model\TokoDummy');
     }
 }
